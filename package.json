@@ -22,7 +22,13 @@
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "createlog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "createlog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "major": "npm version major -m 'build: update major'",
+    "minor": "npm version minor -m 'build: update minor'",
+    "patch": "npm version patch -m 'build: update patch'",
+    "pub": "npm run build && npm publish --access=public",
+    "pub:major": "npm run major && npm publish --access=public",
+    "pub:patch": "npm run patch && npm publish --access=public"
   },
   "lint-staged": {
     "src/*.{js}": [
