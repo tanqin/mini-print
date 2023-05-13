@@ -14,12 +14,7 @@ import json from '@rollup/plugin-json' // 支持将 JSON 文件加载为 ES6 模
 import { name, version, author } from '../package.json'
 
 // 打包处理的文件，添加的备注信息
-const banner =
-  '/*!\n' +
-  ` * ${name} v${version}\n` +
-  ` * (c) 2023-${new Date().getFullYear()} ${author}\n` +
-  ' * Released under the MIT License.\n' +
-  ' */'
+const banner = '/*!\n' + ` * ${name} v${version}\n` + ` * (c) 2023-${new Date().getFullYear()} ${author}\n` + ' * Released under the MIT License.\n' + ' */'
 
 export default {
   input: 'src/index.js',

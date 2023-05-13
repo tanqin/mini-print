@@ -13,10 +13,10 @@ export default {
     serve({
       port: 8080,
       contentBase: ['dist', 'examples/browser'],
-      openPage: 'index.html',
+      openPage: 'index.html'
     }),
     livereload({
-      watch: 'examples/browser',
+      watch: 'examples/browser'
     })
   ]
 }

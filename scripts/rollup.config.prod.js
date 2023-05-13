@@ -6,8 +6,5 @@ import filesize from 'rollup-plugin-filesize' // 用于在打包后显示文件�
 
 export default {
   ...baseConfig,
-  plugins: [
-    ...baseConfig.plugins,
-    filesize()
-  ]
+  plugins: [...baseConfig.plugins, filesize()]
 }

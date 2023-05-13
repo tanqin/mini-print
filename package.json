@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npm run dev",
     "dev": "rollup -w --environment NODE_ENV:development -c scripts/rollup.config.dev.js",
-    "build": "rollup --environment NODE_ENV:production -c scripts/rollup.config.prod.js"
+    "build": "rollup --environment NODE_ENV:production -c scripts/rollup.config.prod.js",
+    "lint": "eslint src",
+    "fix": "eslint src --fix"
   },
   "keywords": [
     "print"
@@ -15,6 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.8",
+    "@babel/eslint-parser": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
     "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-babel": "^6.0.3",
@@ -23,6 +26,13 @@
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-replace": "^5.0.2",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.12.0",
+    "prettier": "^2.8.8",
     "rollup": "^3.21.6",
     "rollup-plugin-clear": "^2.0.7",
     "rollup-plugin-filesize": "^10.0.0",
