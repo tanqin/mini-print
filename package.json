@@ -1,0 +1,14 @@
+{
+  "name": "mini-print",
+  "version": "1.0.0",
+  "description": "前端打印工具方法",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "keywords": [
+    "print"
+  ],
+  "author": "tanqin",
+  "license": "MIT"
+}
