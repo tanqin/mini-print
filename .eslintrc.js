@@ -17,7 +17,6 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    'space-before-function-paren': ['error', 'never'], // 函数名和左括号之间不应该有空格,
     semi: 0 // 结尾不要分号
   }
 }

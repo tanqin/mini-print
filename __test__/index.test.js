@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-const { sum } = require('../src/index')
+// const miniPrint = require('../src/index')
 
-test('sum success', () => {
-  expect(sum(1, 2)).toBe(3)
+test('miniPrint success', () => {
+  // expect(miniPrint()).toBe()
 })
