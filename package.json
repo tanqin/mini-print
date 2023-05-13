@@ -4,11 +4,30 @@
   "description": "前端打印工具方法",
   "main": "src/index.js",
   "scripts": {
-    "test": "npm run dev"
+    "test": "npm run dev",
+    "dev": "rollup -w --environment NODE_ENV:development -c scripts/rollup.config.dev.js",
+    "build": "rollup --environment NODE_ENV:production -c scripts/rollup.config.prod.js"
   },
   "keywords": [
     "print"
   ],
   "author": "tanqin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-eslint": "^9.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-replace": "^5.0.2",
+    "rollup": "^3.21.6",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-filesize": "^10.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
