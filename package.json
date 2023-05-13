@@ -2,7 +2,14 @@
   "name": "mini-print",
   "version": "1.0.0",
   "description": "前端打印工具方法",
+  "homepage": "https://github.com/tanqin/mini-print/blob/main/README.md",
+  "repository": "https://github.com/tanqin/mini-print.git",
+  "bugs": "https://github.com/tanqin/mini-print/issues",
   "main": "src/index.js",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
   "scripts": {
     "dev": "rollup -w --environment NODE_ENV:development -c scripts/rollup.config.dev.js",
     "build": "rollup --environment NODE_ENV:production -c scripts/rollup.config.prod.js",

@@ -22,6 +22,7 @@ export default {
   output: [
     {
       file: `dist/${name}.umd.js`,
+      // 通用模块定义，以 amd，cjs，iife 为一体
       format: 'umd',
       name,
       banner
@@ -35,6 +36,7 @@ export default {
     },
     {
       file: `dist/${name}.cjs.js`,
+      // CommonJS，适用于 Node 和 Browserify/Webpack
       format: 'cjs',
       name,
       banner,
@@ -42,6 +44,7 @@ export default {
     },
     {
       file: `dist/${name}.esm.js`,
+      // 将软件包保存为 ES 模块文件，在现代浏览器中可以通过
       format: 'es',
       name,
       banner,
@@ -49,6 +52,7 @@ export default {
     },
     {
       file: `dist/${name}.js`,
+      // 一个自定执行的功能
       format: 'iife',
       name,
       banner,
